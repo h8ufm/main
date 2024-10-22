@@ -1,0 +1,14 @@
+
+services:
+  web:
+    build:
+      context: ./my-php-site
+    ports:
+      - "83:80"
+    volumes:
+      - ./my-php-site:/var/www/html
+
+  flask:
+    build: .
+    ports:
+      - "5000:5000"
