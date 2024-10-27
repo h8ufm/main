@@ -16,7 +16,7 @@ def contact():
     smtp_port = 587  # Порт SMTP-сервера
     smtp_user = 'dmitriy.s.k72@yandex.ru'  # Ваш email
     smtp_password = 'umqyvqbyxndjwapv'  # Ваш пароль
-    to_email = 'duzhnov.nikita55@mail.ru'  # Email получателя
+    to_email = 'siegheil72@mail.ru'  # Email получателя
 
     # Создание сообщения
     msg = MIMEMultipart()

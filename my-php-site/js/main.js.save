@@ -145,16 +145,7 @@ $(".popup-close").click(function (e) {
 });
 
 jQuery(document).ready(function () {
-            $(".open-popup").click(function () {
-                $(".popup").addClass("popup-active");
-            });
-
-            $(".popup-close").click(function () {
-                $(".popup").removeClass("popup-active");
-            });
-
-	$("#form, #form-popup").submit(function (event) {
-		event.preventDefault();
+	$("#form, #form-popup").submit(function () {
 		var str = $(this).serialize();
 
 	$.ajax({
@@ -171,15 +162,6 @@ jQuery(document).ready(function () {
 				$("#popup_thanks").addClass("popup_active");
 				$("#popup_thanks .popup_thanks").addClass("popup_active");
 				$(".popup").removeClass("popup-active");
-				$('.popup').removeClass("popup-content");
-
-
-				$(".form-calc-popup").removeClass("_active");
-				$("html").removeClass("_overlay");
-				$(".popup").removeClass("_active");
-				$("html").removeClass("_overlay");
-
-
 				setTimeout(function () {
         		        $("#popup_thanks .popup_thanks").removeClass("popup_active");
 	                	$("#popup_thanks").removeClass("popup_active");
